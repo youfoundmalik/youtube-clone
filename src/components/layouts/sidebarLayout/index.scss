@@ -1,0 +1,14 @@
+.sidebar-layout {
+  min-height: 92vh;
+
+  .sidebar {
+    flex-basis: 16.5%;
+    min-width: 240px;
+    position: sticky;
+    top: 58px;
+  }
+
+  .main {
+    flex-basis: 83.5%;
+  }
+}

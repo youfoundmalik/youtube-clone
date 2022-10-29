@@ -1,0 +1,47 @@
+.feed-container {
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 100%;
+
+  .feed-header {
+    position: sticky;
+    top: 58px;
+    height: 58px;
+    display: grid;
+    align-content: center;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .feed-body {
+    min-height: 84vh;
+    padding: 25px 0px;
+    background-color: #f9f9f9;
+
+    .content {
+      margin: 0px 16px;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      gap: 5px;
+      row-gap: 30px;
+
+      .shorts {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        max-width: 100%;
+        min-width: 100%;
+        overflow-x: scroll;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        width: 0px;
+        gap: 5px;
+        row-gap: 30px;
+
+        &::-webkit-scrollbar {
+          display: none;
+        }
+      }
+    }
+  }
+}
