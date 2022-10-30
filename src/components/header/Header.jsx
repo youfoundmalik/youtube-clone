@@ -10,7 +10,7 @@ import {
 import { youtube } from "../../assets/images/images";
 import { Link } from "react-router-dom";
 
-const Header = () => {
+const Header = (props) => {
   const [focus, setFocus] = useState(false);
   const [searchInput, setSearchInput] = useState("");
 
@@ -20,9 +20,14 @@ const Header = () => {
   return (
     <Stack direction="row" className="header-container">
       <Stack direction="row" className="logo-toggle">
-        <IconButton className="toggle">
-          <MenuIcon />
-        </IconButton>
+        {props.isCollapsed !== (null || undefined) && (
+          <IconButton
+            className="toggle"
+            onClick={() => props.setIsCollapsed(!props.isCollapsed)}
+          >
+            <MenuIcon />
+          </IconButton>
+        )}
         <Link to="/" className="logo">
           <img src={youtube} alt="logo" className="logo-image" />
           <p className="logo-text">YouTube</p>

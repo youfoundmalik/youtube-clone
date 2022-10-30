@@ -7,12 +7,29 @@
   box-sizing: border-box;
   padding: 10px;
   gap: 10px;
+  max-width: 292px;
 
   .card-thumbnail {
+    position: relative;
     width: 100%;
 
     img {
       width: 100%;
+    }
+
+    .duration {
+      position: absolute;
+      bottom: 4px;
+      right: 0;
+      margin: 4px;
+      color: #fff;
+      background-color: rgba(0, 0, 0, 0.8);
+      padding: 3px 4px;
+      border-radius: 2px;
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 12px;
+      letter-spacing: 0.5px;
     }
   }
 
@@ -69,7 +86,7 @@
             display: -webkit-box;
             -webkit-line-clamp: 1;
             -webkit-box-orient: vertical;
-            max-width: 80%;
+            max-width: 200px;
           }
         }
 
@@ -88,11 +105,34 @@
             font-weight: 400;
           }
         }
+
+        .live-btn {
+          margin-top: 8px;
+          gap: 3px;
+          background-color: #005952;
+          width: max-content;
+          align-items: center;
+          padding: 0px 4px;
+          border-radius: 2px;
+
+          p {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 12px;
+            color: #fff;
+            padding-right: 2px;
+            padding-bottom: 1px;
+            vertical-align: middle;
+            letter-spacing: 0.35px;
+          }
+        }
       }
     }
   }
 }
 
-#shorts{
-  min-width: 280px;
+#collapsed-sidebar {
+  max-width: 320px;
 }
+
+

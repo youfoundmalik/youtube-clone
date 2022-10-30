@@ -10,6 +10,23 @@ body {
     "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  scrollbar-color: #888 transparent;
+  scrollbar-width: thin;
+
+  ::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    margin-top: 5px;
+    background: #888;
+    border-radius: 20px;
+  }
 }
 
 code {
