@@ -1,0 +1,118 @@
+.header-container {
+  height: 58px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 16px;
+  position: sticky;
+  top: 0;
+  background-color: #fff;
+  z-index: 999;
+
+  .logo-toggle {
+    align-items: center;
+    justify-content: flex-start;
+    gap: 25px;
+
+    .logo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 5px;
+      height: 25px;
+
+      .logo-image {
+        height: 100%;
+      }
+
+      .logo-text {
+        display: none;
+        height: 100%;
+        font-family: "YouTube Sans", sans-serif;
+        font-size: 25px;
+        letter-spacing: -1px;
+      }
+    }
+  }
+
+  .search-area {
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    .search-bar {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: flex-end;
+      height: 40px;
+      min-width: 630px;
+
+      .input-field {
+        box-sizing: border-box;
+        z-index: 2;
+        height: 100%;
+        align-items: center;
+        justify-content: flex-end;
+        background-color: transparent;
+        border: 1px solid #ccc;
+        border-right: none;
+        border-radius: 2px 0 0 2px;
+        box-shadow: inset 0 1px 2px #eee;
+
+        .input-search-icon {
+          display: flex;
+          align-items: center;
+          padding: 0px 8px;
+        }
+
+        input {
+          font-size: 16px;
+          padding: 2px 6px;
+          outline: none;
+          border: none;
+          min-width: 525px;
+        }
+
+        &:focus-within {
+          outline: 1px solid #005952;
+        }
+      }
+
+      .search-btn {
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        border: 1px solid #d3d3d3;
+        background-color: #f8f8f8;
+        border-radius: 0 2px 2px 0;
+        cursor: pointer;
+        width: 64px;
+        margin: 0;
+
+        &:hover {
+          border-color: #c6c6c6;
+          background-color: #f0f0f0;
+        }
+      }
+    }
+  }
+
+  .options {
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+
+    .MuiBadge-badge {
+      top: 4px;
+      right: 4px;
+      background-color: #005952;
+    }
+
+    .avatar {
+      margin: 0px 10px;
+    }
+  }
+}
